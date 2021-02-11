@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>InstagramPage2</title>
+    
+</head>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="What are you thinking?" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comment</label>
+        </div>
+        <i class="fas fa-camera"></i>
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<body class="m-0">
+
+    <div class="container-fluid ">
+
+        <div class="header">
+
+            <nav class="navbar sticky-top navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="#">
+                        <i class="fab fa-instagram"></i>
+                        <p class="fst-italic d-inline">Instagram</p>
+                    </a>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end me-5">                   
+                        <!-- Button -->
+                        <button type="button" class= "btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+                        <!-- Dropdown--> 
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <!--links buttons --> 
+        <div class="middle buttons">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-grip-horizontal" style="color: gray;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">
+                            <i class="fas fa-grip-vertical" style="color: gray;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row d-flex flex-column mt-5 feed-container align-items-center">
+
+            <!-- Post1-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                    <!-- Header post -->
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Los autos 
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1612882834894-8205a248a74a?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país
+                    </p>
+                </div>
+            </div>
+
+
+            <!--Post2-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                    
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            El cafe
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29mZmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        Costa Rica fue el primer país centroamericano que estableció esta floreciente industria. Destacadas personalidades contribuyeron con el desarrollo del cultivo y se ha asignado al Padre Félix Velarde como el primer sembrador, quien en 1816 hace referencia a que posee un solar con plantas de café. El primer cafetal estuvo 100 metros al norte de la Catedral Metropolitana, en el cruce de la Avenida Central y calle Cero.
+                    </p>
+
+                </div>
+            </div>
+    
+
+            <!--Post3-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                   
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Las playas 
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1534570122623-99e8378a9aa7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país
+                    </p>
+
+                </div>
+            </div>
+            
+
+            <!--Post4-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                    
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                           post4
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGJlYWNofGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país
+                    </p>
+
+                </div>
+            </div>
+         
+            <!--Post5-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                   
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Post 5
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país.
+                    </p>
+
+                </div>
+            </div>
+           
+            <!-- Post6-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                    
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Post 6
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país
+                    </p>
+
+                </div>
+            </div>
+
+            <!--Post7-->
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                   
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Post 7
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1578346693440-3dcedf4b7b81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fHBlcnJvfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-4 d-flex flex-column post-container mb-5 p-0 bg-light rounded">
+
+                <div class="d-flex flex-row justify-content-between header-post-container ps-3 pe-3 pt-1 pb-1">
+                    
+                    <div class="title-post-container">
+                        <h5 class="fw-bolder pt-2">
+                            Post
+                        </h5>
+                    </div>
+                    <div class="date-post-container pt-2">
+                        <h6 class="fw-bolder text-secondary">
+                            1/1
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center photo-post-container">
+                    <img src="https://images.unsplash.com/photo-1524800930948-7923979f04e6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTJ8fHBlcnJvfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="photo w-100">
+                </div>
+                <div class="footeer-post-container p-3">
+                    <p>
+                        La importación de automóviles a Costa Rica tuvo su inicio durante la primera década del
+                        siglo XX. Fue durante estos primeros años del nuevo siglo que los automóviles y elementos afines
+                        a los mismos empiezan a formar parte de las importaciones y de las estadísticas comerciales de
+                        nuestro país
+                    </p>
+
+                </div>
+            </div>
+            
+
+            
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
